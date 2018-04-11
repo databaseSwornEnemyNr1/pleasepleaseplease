@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">TicTacToe</string>
+    <string name="button1">what</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragmentt</string>
+    <string name="vs">VS</string>
+
+
+</resources>

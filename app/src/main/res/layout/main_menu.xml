@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/btnStartgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="Start game"
+        app:layout_constraintBottom_toTopOf="@+id/btnHighscore"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuVS" />
+
+    <Button
+        android:id="@+id/btnHighscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="134dp"
+        android:text="Highscores"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartgame" />
+
+    <TextView
+        android:id="@+id/enterNames"
+
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="85dp"
+        android:text="Enter names: "
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/menuVS"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editName1"
+        android:layout_width="101dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="161dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="..."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHighscore"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editName2"
+        android:layout_width="101dp"
+        android:layout_height="55dp"
+        android:layout_marginRight="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="..."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/menuVS"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editName1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/menuVS"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="36dp"
+        android:text="VS"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnStartgame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterNames"
+        tools:text="@string/vs" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200px"
+    android:layout_marginTop="200px"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.svettleif.tictactoe.newFragment">
+
+
+
+    <Chronometer
+        android:id="@+id/simpleChronometer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" /><!-- center horizontal gravity for the text of chronometer -->
+    <TextView
+
+        android:id="@+id/vs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70px"
+        android:gravity="center_horizontal"
+        android:text="vs"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_marginTop="70px"
+        android:layout_marginLeft="200px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="player1"
+        android:textAlignment="viewStart"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_marginTop="70px"
+        android:layout_marginRight="200px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="player2"
+        android:textAlignment="textEnd"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/testText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="player1"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+</FrameLayout>
