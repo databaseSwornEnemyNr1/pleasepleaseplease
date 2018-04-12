@@ -5,7 +5,7 @@
     android:layout_marginTop="200px"
     android:fitsSystemWindows="true"
     android:background="@color/colorPrimaryDark"
-    tools:context="com.example.svettleif.tictactoe.newFragment">
+    tools:context="com.example.iMightBeIndian.PongOnParticlePhoton.MainActivity">
 
 
 

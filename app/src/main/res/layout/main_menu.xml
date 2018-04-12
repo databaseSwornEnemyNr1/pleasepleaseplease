@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context="com.example.iMightBeIndian.PongOnParticlePhoton.MainMenu"
     tools:layout_editor_absoluteY="81dp">
 
 
@@ -11,24 +12,21 @@
         android:id="@+id/btnStartgame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="20dp"
         android:text="Start game"
-        app:layout_constraintBottom_toTopOf="@+id/btnHighscore"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintBottom_toTopOf="@+id/AI"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuVS" />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/btnHighscore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="134dp"
+        android:layout_marginBottom="56dp"
         android:text="Highscores"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnStartgame" />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/enterNames"
@@ -86,4 +84,14 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enterNames"
         tools:text="@string/vs" />
+
+    <Button
+        android:id="@+id/AI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="AI"
+        app:layout_constraintBottom_toTopOf="@+id/btnHighscore"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 </android.support.constraint.ConstraintLayout>
